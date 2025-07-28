@@ -1,0 +1,10 @@
+^C:\CODESPROJECT\OUTOWORDS\SERVER\BUILD\CMAKEFILES\0819B44BDA81559AEA9B93F3A3BF7380\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/CodesProject/OutoWords/server -BC:/CodesProject/OutoWords/server/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/CodesProject/OutoWords/server/build/OutoWordsServer.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

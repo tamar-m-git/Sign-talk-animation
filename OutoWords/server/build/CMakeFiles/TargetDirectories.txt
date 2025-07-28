@@ -1,0 +1,3 @@
+C:/CodesProject/OutoWords/server/build/CMakeFiles/server.dir
+C:/CodesProject/OutoWords/server/build/CMakeFiles/ALL_BUILD.dir
+C:/CodesProject/OutoWords/server/build/CMakeFiles/ZERO_CHECK.dir

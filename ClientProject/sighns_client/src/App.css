@@ -1,0 +1,96 @@
+.camera-center-layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #222;
+}
+
+
+
+.animation-corner {
+  position: absolute;
+  left: 50px;
+  bottom: 40px;
+  width: 250px;
+  height: 250px;
+  background: #222;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #000a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+:root {
+  --turquoise-dark: #007a7a;
+  --red-dark:     #a80000;
+  --yellow-dark:  #b8860b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  
+}
+
+.app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+  z-index: 10;
+}
+.overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.logo {
+  width: 700px; 
+  margin-bottom: 3rem;
+}
+
+
+.start-button {
+  font-size: 1.4rem; 
+  padding: 2rem 4rem;
+  border: 3px solid var(--turquoise-dark);
+  border-radius: 24px;
+  background: transparent;
+  color: var(--turquoise-dark);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.start-button:hover {
+  background-color: rgba(0, 122, 122, 0.1);
+  transform: scale(1.05);
+}
+
+.main-layout {
+  display: flex;
+  height: 100%;
+}
+
+

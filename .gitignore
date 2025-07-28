@@ -1,0 +1,14 @@
+# התעלמות מכל תיקיות .vs בכל מקום בפרויקט
+**/.vs/
+
+# התעלמות מכל הקבצים עם סיומת .ipch בכל תיקייה
+*.ipch
+**/*.ipch
+# Python cache
+__pycache__/
+
+# IDE files
+.idea/
+# Temporary or output folders
+blender_server/OUTPUT/
+

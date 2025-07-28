@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/CodesProject/OutoWords/server/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
