@@ -4,15 +4,11 @@ import AnimationDisplay from './components/AnimationDisplay';
 import './App.css';
 
 function App() {
-  const [started, setStarted] = useState(false);
-
-  // זה התור שבו תשתמשי לכל כתובות האנימציה
-  const [animationQueue, setAnimationQueue] = useState([]);
-
-  const clearQueue = () => setAnimationQueue([]);
+const [started, setStarted] = useState(false);
+const [animationQueue, setAnimationQueue] = useState([]);
+const clearQueue = () => setAnimationQueue([]);
 const removeFirstAnimation = () => setAnimationQueue(q => q.slice(1));
-  // כאן מוסיפים את הפונקציה שמנקה את התיקייה בשרת ומתחילה שיחה
-  const handleStart = async () => {
+const handleStart = async () => {
     await fetch("http://localhost:5005/clear_output", { method: "POST" });
     setStarted(true);
   };
@@ -34,7 +30,7 @@ const removeFirstAnimation = () => setAnimationQueue(q => q.slice(1));
   return (
     <div className="app">
       
-      {/* מסך פתיחה עם לוגו וכפתור */}
+
       <div style={overlayStyle}>
         <img
           src="/LogoSighns.png"
@@ -46,7 +42,7 @@ const removeFirstAnimation = () => setAnimationQueue(q => q.slice(1));
         </button>
       </div>
 
-      {/* תצוגת האפליקציה אחרי התחלה */}
+
       {started && (
   <div style={{
     width: '100vw',
@@ -77,8 +73,8 @@ const removeFirstAnimation = () => setAnimationQueue(q => q.slice(1));
     justifyContent: 'center',
     zIndex: 10,
     overflow: 'hidden',
-    transform: 'scale(0.7)',         // הוסיפי שורה זו
-    transformOrigin: 'bottom left',   // או 'center'
+    transform: 'scale(0.7)',       
+    transformOrigin: 'bottom left',    
   }}
 >
   <AnimationDisplay
